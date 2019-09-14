@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+	<background>
+	
+	</background>
+<meta charset="UTF-8">
+
+<title>Dieter Rams Calculator</title>
+
+	<style>
+		
+		body{
+			width: 100%;
+			background-color: #eae7e5;
+			margin: 10px 0px 100px 0px;
+		}
+/*
+			
+		.rectangle {
+			margin: -729px 0px 0px 0px;
+			height: 100px;
+  			width: 100%;
+  			background-color: #f3f4ef;
+		}
+		.rectangle2 {
+			margin: 407px 0px 0px 0px;
+			height: 100px;
+  			width: 100%;
+  			background-color: #fd8763;
+		}
+*/
+		
+		
+		input {background-color: #b2b7bb;
+		color: #ffffff;
+		width: 150px;
+		border-radius: 500px;
+		width: 50px; 
+		height: 50px;
+		align: auto;
+/*	buttons*/
+		}
+		
+		#circlebutton {
+			margin: 25px 0px 0px 137px;
+			width: 100px;
+			border: none;
+			height: 100px;
+			background-color: #fd8763;
+			font-size: 50px;
+			text-align: center;
+/*	equals*/
+		}
+
+		
+		#top_display {
+			width: 560px;
+			color: #fd8763;
+			margins: 5% 120% 0px 0px;
+/**/
+	
+		}
+		
+		#display {
+			font-size: 50px;
+			color: #fd8763;
+			box-shadow: none;
+			border-radius: 0px;
+			border: none;
+			background-color: #f3f4ef;
+			width: 73%;
+			height: 100px;
+			text-align: right;
+			margin: 10% 0px -30px -4%;
+			box-shadow: none;
+			text
+			
+			
+		}
+		
+		.button {
+			font-size: 15px;
+			border: 10px;
+			height: 60px;
+			width: 60px;
+			border-radius: 100%;
+			margin: 0px 0px 0px 25px;
+		
+		}
+		
+		
+		.inputRow1 {
+			display: inline-block;
+			margin: 0% 0px 0% -1%;
+			width: 100%;
+			padding-bottom: 30px; 
+			padding-top: 80px;
+/*		buttons1*/
+		}
+		
+			.inputRow2 {
+			display: inline-block;
+			margin: 0% 0px 0% -1%;
+			width: 100%;
+			padding-bottom: 30px; 
+/*		buttons2*/
+		}
+		
+			.inputRow3 {
+			display: inline-block;
+			margin: 0% 0px 0% -1%;
+			width: 100%;
+			padding-bottom: 30px; 
+/*		buttons3*/
+		}
+		
+			.inputRow4 {
+			display: inline-block;
+			margin: 0% 0px 0% -1%;
+			width: 100%;
+/*		buttons4*/
+		}
+		
+		.orangebutton {
+			display: inline-block;
+			background-color: #fd8763;
+			font-size: 15px;
+			margin: 0% 0px 0% -1%;
+			width: 100%;
+			border: 10px;
+			height: 60px;
+			width: 60px;
+			border-radius: 100%;
+			margin: 0px 0px 0px 25px;
+		
+		}
+		
+		
+		.inputField{
+			display: inline-block;
+			color: #f3f4ef;
+		}
+		
+		
+		#myCalculator {
+			background-color: #f3f4ef;
+			border-radius: 20px;
+			width: 400px;
+			height: 720px;
+			padding: 15px;
+			margin: 5% 0px 5% 35%;
+  			box-shadow: 10px 10px 50px black;
+/*			calculator border outside*/
+		}
+		
+		#myCalculator2 {
+			background-color: #eae7e5;
+			border-radius: 12px;
+			width: 370px;
+			height: 690px;
+			padding: 15px;
+			margin: 0% 0% 0%;
+/*			calculator border inside*/
+		
+	</style>
+
+</head>
+	
+<body>
+	<form name="calculator">
+		<div id="myCalculator">
+			<div id="myCalculator2">
+			<div id="top_display">
+				<input type="text" name="display" id="display" disabled>
+			</div>
+			<div class="inputRow1">
+				<input type="button" class= "button" name="one" value="1" onclick="calculator.display.value +='1'">
+
+				<input type="button" class= "button" name="two" value="2" onclick="calculator.display.value +='2'">
+
+				<input type="button" class= "button" name="three" value="3" onclick="calculator.display.value +='3'">
+
+				<input type="button" class= "button" name="add" value="+" onclick="calculator.display.value += '+'"> 
+			</div>
+
+			<div class="inputRow2">
+				<input type="button" class= "button" name="four" value="4" onclick="calculator.display.value +='4'">
+
+				<input type="button" class= "button" name="five" value="5" onclick="calculator.display.value +='5'">
+
+				<input type="button" class= "button" name="six" value="6" onclick="calculator.display.value +='6'">
+
+				<input type="button" class= "button" name="subtract" value="-" onclick="calculator.display.value += '-'">
+			</div>
+
+			<div class="inputRow3">
+				<input type="button" class="button" name="seven" value="7" onclick="calculator.display.value +='7'">
+
+				<input type="button" class="button" name="eight" value="8" onclick="calculator.display.value +='8'">
+
+				<input type="button" class="button" name="nine" value="9" onclick="calculator.display.value +='9'">
+
+				<input type="button" class="button" name="multiply" value="x" onclick="calculator.display.value += '*'">
+			</div>
+
+			<div class="inputRow4">
+				
+				<input type="button" class="orangebutton" name="clear" value="c" onclick="calculator.display.value = ''">
+					   
+				<input type="button" class="button" name="zero" value="0" onclick="calculator.display.value +='0'">
+				
+				<input type="button" class="button" name="decimal" value="." onclick="calculator.display.value +='.'">
+
+				<input type="button" class="button" name="divide" value="/" onclick="calculator.display.value += '/'">
+		  </div>
+
+			<div class="inputField">
+
+				<input type="button" class="equals" name="equals" id="circlebutton" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+
+			</div>
+			</div>
+			
+	  </div>
+		
+	</form>
+	
+		<h2>			
+		<div class="rectangle"></div>
+		<div class="rectangle2"></div>
+	</h2>
+	
+</body>
+	
+</html>
