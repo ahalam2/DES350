@@ -1,0 +1,775 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Symba</title>
+</head>
+<style>
+	
+	.icon {
+		position: absolute;
+		left: 24%;
+		top: 6%;
+	}
+	
+	
+	
+	body {
+		background-color: pink;
+	}
+
+	
+	
+	
+	.head {
+		width: 400px;
+		height: 360px;
+		background-color: #b28a66;
+		border-radius: 48%;
+		position: absolute;
+		top: 70px;
+		left: 100px;
+	}
+		
+	
+	
+	
+	.left-ear-test {
+		margin-left:30px;
+ 		position: absolute;
+	 	background-color: #b28a66;
+	  	text-align: left;
+	  	width: 10em;
+	  	height: 10em;
+		left: -40px;
+		top: 42px;
+	  	border-top-right-radius: 40%;
+}
+
+	.left-ear-test:before,
+	.left-ear-test:after {
+	  	content: '';
+	  	position: absolute;
+	  	background-color: inherit;
+	  	width: 10em;
+	  	height: 10em;
+	  	border-top-right-radius: 15%;
+	}
+
+	.left-ear-test {
+  		transform: rotate(-97deg) skewX(0deg) scale(0.5);
+}
+
+	.left-ear-test:before {
+  		transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+}
+
+	.left-ear-test:after {
+  		transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+}
+	
+	
+/*
+    .left-ear {
+     	width: 0;
+     	height: 0;
+		position: absolute;
+      	border-top: 170px solid #b28a66;
+     	border-right: 140px solid transparent;
+		top: 60px;
+		left: 40px;
+		transform: rotate(-8deg);
+		display: none; 
+	}
+	
+   .left-ear2 {
+      	border-bottom: 70px solid #b28a66;
+      	border-left: 120px solid transparent;
+      	border-right: 20px solid transparent;
+     	height: 84px;
+     	width: 63px;
+	 	transform: rotate(-50deg);
+	   	display: none;
+    }
+*/
+	
+	.left-ear3 {
+		width: 40px;
+		height: 170px;
+		top: 60px;
+		left: 120px;
+		background-color: #b28a66;
+		transform: rotate(37deg);
+		position: absolute;
+		border-radius: 10px;
+	}
+	
+	.left-ear4 {
+		width: 140px;
+		height: 34px;
+		top: 128px;
+		left: 68px;
+		background-color: #6b4e32;
+		transform: rotate(-55deg);
+		position: absolute;
+		border-radius: 10px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	.right-ear-test {
+		margin-left:30px;
+ 		position: absolute;
+	 	background-color: #b28a66;
+	  	text-align: left;
+	  	width: 10em;
+	  	height: 10em;
+		left: 417px;
+		top: 43.5px;
+	  	border-top-right-radius: 40%;
+}
+
+	.right-ear-test:before,
+	.right-ear-test:after {
+	  	content: '';
+	  	position: absolute;
+	  	background-color: inherit;
+	  	width: 10em;
+	  	height: 10em;
+	  	border-top-right-radius: 20%;
+	}
+
+	.right-ear-test {
+  		transform: rotate(8deg) skewX(0deg) scale(0.5);
+}
+
+	.right-ear-test:before {
+  		transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+}
+
+	.right-ear-test:after {
+  		transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+}
+	
+	
+/*
+	.right-ear {
+     	width: 0;
+     	height: 0;
+		position: absolute;
+      	border-top: 170px solid #b28a66;
+     	border-left: 140px solid transparent;
+		top: 60px;
+		left: 420px;
+		transform: rotate(8deg); 
+		display: none;
+	}
+	
+	.right-ear2 {
+     	border-bottom: 70px solid #b28a66;
+      	border-left: 120px solid transparent;
+     	border-right: 20px solid transparent;
+     	height: 84px;
+     	width: 63px;
+		left: 40px;
+		top: 32px;
+		position: absolute;
+		transform: translateX(350px) rotateY(-180deg) rotate(-50deg);
+		display: none;
+    }
+*/
+
+	.right-ear3 {
+		width: 40px;
+		height: 170px;
+		top: 60px;
+		left: 440px;
+		background-color: #b28a66;
+		transform: rotate(-37deg);
+		position: absolute;
+		border-radius: 10px;
+	}
+	
+	.right-ear4 {
+		width: 140px;
+		height: 34px;
+		top: 129px;
+		left: 390px;
+		background-color: #6b4e32;
+		transform: rotate(55deg);
+		position: absolute;
+		border-radius: 10px;
+	}
+	
+	
+	
+	
+	.left-eye {
+		height: 60px; 
+		width: 60px;
+		background-color: black;
+		border-radius: 50%;
+		top: 260px;
+		left: 200px;
+		position: absolute;
+	}
+	
+	.left-iris {
+		height: 40px; 
+		width: 25px;
+		background-color: white;
+		border-radius: 50%;
+		top: 260px;
+		left: 210px;
+		position: absolute;
+		transform: rotate(50deg);
+	}
+	
+	.left-iris-small {
+		height: 10px; 
+		width: 10px;
+		background-color: white;
+		border-radius: 50%;
+		top: 286px;
+		left: 240px;
+		position: absolute;
+		transform: rotate(45deg);
+	}
+	
+	
+	
+	
+	
+	.right-eye {
+		height: 60px; 
+		width: 60px;
+		background-color: black;
+		border-radius: 50%;
+		top: 260px;
+		left: 330px;
+		position: absolute;
+	}
+	
+	.right-iris {
+		height: 40px; 
+		width: 25px;
+		background-color: white;
+		border-radius: 50%;
+		top: 260px;
+		left: 340px;
+		position: absolute;
+		transform: rotate(50deg);
+	}
+		
+	.right-iris-small {
+		height: 10px; 
+		width: 10px;
+		background-color: white;
+		border-radius: 50%;
+		top: 286px;
+		left: 369px;
+		position: absolute;
+		transform: rotate(45deg);
+	}
+	
+
+	
+	
+	
+	.nose {
+		position: absolute;
+		background-color: black;
+		text-align: left;
+		top: 303px;
+		left: 278px;
+}
+	
+	
+	.nose:before,
+	.nose:after {
+		content: '';
+		position: absolute;
+		background-color: inherit;
+}
+	.nose,
+	.nose:before,
+	.nose:after {
+		width:  1.5em;
+		height: 1.5em;
+		border-top-right-radius: 75%;
+}	
+
+	.nose {
+		transform: rotate(-120deg) skewX(-30deg) scale(1,.866);
+}
+	.nose:before {
+		transform: rotate(-135deg) skewX(-25deg) scale(1.414,.707) translate(0,-50%);
+}
+	.nose:after {
+		transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+}
+	
+	
+	
+	
+	.mouth {
+		background-color: #6b4e32;
+		width: 220px;
+		height: 140px;
+		top: 293px;
+		left: 190px;
+		border-radius: 70%;
+		position: absolute;
+	}
+	
+	.mouth1 {
+		background-color: black;
+		height: 45px;
+		width: 7px;
+		top: 320px;
+		left: 293px;
+		position: absolute;
+	}
+	
+	.mouth2 {
+		width: 50px;
+		height: 40px;
+		background-color: black;
+		top: 340px;
+		left: 250px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	
+	.mouth3 {
+		width: 50px;
+		height: 40px;
+		background-color: black;
+		top: 340px;
+		left: 294px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	
+	.mouth4 {
+		width: 45px;
+		height: 43px;
+		background-color: #6b4e32;
+		top: 330px;
+		left: 299.4px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	
+	.mouth5 {
+		width: 45px;
+		height: 43px;
+		background-color: #6b4e32;
+		top: 330px;
+		left: 249px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	
+	
+	.tongue {
+		width: 45px;
+		height: 45px;
+		top: 350px;
+		left: 274px;
+		background-color: pink;
+		position: absolute;
+		border-radius: 50%;
+	}
+	
+	
+	
+	.hair-right1 {
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 40px;
+		left: 353px;
+		border-style: solid;
+		transform: rotate(35deg);
+		border-width: 100px 0 0 30px;
+		border-color: transparent transparent transparent #b28a66;
+	}
+	
+	.hair-right2 {
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 30px;
+		left: 375px;
+		border-style: solid;
+		transform: rotate(45deg);
+		border-width: 100px 0 0 30px;
+		border-color: transparent transparent transparent #b28a66;
+	}
+	
+	.hair-right3 {
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 23px;
+		left: 400px;
+		border-style: solid;
+		transform: rotate(55deg);
+		border-width: 100px 0 0 30px;
+		border-color: transparent transparent transparent #b28a66;
+	}
+	
+	
+	.hair-right3 {
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 23px;
+		left: 400px;
+		border-style: solid;
+		transform: rotate(55deg);
+		border-width: 100px 0 0 30px;
+		border-color: transparent transparent transparent #b28a66;
+	}
+	
+	.hair-right4 {
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 49px;
+		left: 342px;
+		border-style: solid;
+		transform: rotate(22deg);
+		border-width: 100px 0 0 30px;
+		border-color: transparent transparent transparent #b28a66;
+	}
+	
+	
+	
+	
+	.hair-left1 {
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 40px;
+		left: -133px;
+		border-style: solid;
+		transform: rotate(35deg);
+		border-width: 100px 0 0 30px;
+		border-color: transparent transparent transparent #b28a66;
+		transform: translateX(350px) rotateY(-180deg) rotate(35deg);
+	}
+	
+	.hair-left2 {
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 30px;
+		left: -155px;
+		border-style: solid;
+		border-width: 100px 0 0 30px;
+		border-color: transparent transparent transparent #b28a66;
+		transform: translateX(350px) rotateY(-180deg) rotate(45deg);
+	}
+	
+	.hair-left3 {
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 23px;
+		left: -180px;
+		border-style: solid;
+		border-width: 100px 0 0 30px;
+		border-color: transparent transparent transparent #b28a66;
+		transform: translateX(350px) rotateY(-180deg) rotate(55deg);
+	}
+	
+	
+	.hair-left4 {
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 49px;
+		left: -122px;
+		border-style: solid;
+		border-width: 100px 0 0 30px;
+		border-color: transparent transparent transparent #b28a66;
+		transform: translateX(350px) rotateY(-180deg) rotate(22deg);
+	}
+
+	
+	
+	
+	
+	
+	.animation {
+	
+		background-color: red;
+		position: absolute;
+		top: 200px;
+		left: 0px;
+
+		
+	
+	
+		animation-name: tongue;
+		animation-duration: 5s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease;
+	
+	}
+	
+	@-webkit-keyframes tongue {
+		0%   {background-color: red;
+				left:00px; 
+				top:00px;
+			
+		}
+  		
+  		50% {background-color: blue;
+				left:00px; 
+				top:12px;
+		
+		}
+		
+		100% {background-color: blue;
+				left:00px; 
+				top:0px;
+		
+		}
+	}
+	
+	
+	
+	
+	
+	.animation2 {
+	
+		background-color: red;
+		position: absolute;
+		top: 00px;
+		left: 0px;
+
+		
+	
+	
+		animation-name: nose;
+		animation-duration: .7s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease;
+ 
+}
+
+	
+	@-webkit-keyframes nose {
+				
+		0%   {background-color: pink;
+				left: 0px; 
+				top: 00px;
+			
+		}
+  		
+  		25% {background-color: pink;
+				left: -2px; 
+/*				top: 1.5em;*/
+/*				transform: rotate(50deg);*/
+				position: absolute;
+		}
+		
+		
+  		50% {background-color: pink;
+				left: 0px; 
+				top: 0px;
+/*				transform: rotate(0deg);*/
+				position: absolute;
+		
+		}
+		
+		
+  		75% {background-color: pink;
+				left: 2px; 
+/*				top: 1.5em;*/
+/*				transform: rotate(-50deg);*/
+				position: absolute;
+		
+		}
+		
+		100% {background-color: pink;
+				left: 0px; 
+				top: 0px;
+		
+		}
+	}
+	
+	
+	
+	.animation3 {
+	
+		background-color: red;
+		position: absolute;
+		top: 00px;
+		left: 0px;
+
+		
+	
+	
+		animation-name: hair;
+		animation-duration: 5s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease;
+ 
+}
+
+	
+	@-webkit-keyframes hair {
+				
+		0%   {background-color: pink;
+				left: 0px; 
+				top: 00px;
+			
+		}
+  		
+  		25% {background-color: pink;
+				left: 2px; 
+				top: 3px;
+/*				transform: rotate(50deg);*/
+				position: absolute;
+		}
+		
+		
+  		50% {background-color: pink;
+				left: 0px; 
+				top: 0px;
+/*				transform: rotate(0deg);*/
+				position: absolute;
+		
+		}
+		
+		
+  		75% {background-color: pink;
+				left: 0px; 
+				top: 3px;
+/*				transform: rotate(-50deg);*/
+				position: absolute;
+		
+		}
+		
+		100% {background-color: pink;
+				left: 0px; 
+				top: 0px;
+		
+		}
+	}
+	
+	
+	
+	
+	
+	
+	</style>
+	
+<body>
+	
+	
+<div class="icon">
+		
+		
+	<div class="head"></div>
+	
+	<div class="left-ear-test"></div>
+	<div class= "right-ear-test"></div>
+	
+	
+	
+
+	<div class="left-ear"></div>
+	
+	
+	<div class="right-ear"></div>
+	
+	
+	
+	
+	
+	
+	<div class="mouth"></div>
+	
+	<div class="animation">
+	<div class="tongue"></div>
+	
+	</div>
+	
+<div class="eyes">
+		<div class="left-eye"></div>
+	
+		<div class="right-eye"></div>
+	
+		<div class="right-iris"></div>
+	
+		<div class="left-iris"></div>
+	
+		<div class="left-iris-small"></div>
+	
+		<div class="right-iris-small"></div> 
+	</div>
+	
+	
+	
+	
+	<div class="animation2">
+		<div class="nose"></div></div>
+	
+	
+
+	
+	<div class="left-ear2"></div>
+	<div class="left-ear3"></div>
+	<div class="left-ear4"></div>
+	
+	
+	
+	<div class="right-ear2"></div>
+	<div class="right-ear3"></div>
+	<div class="right-ear4"></div>
+	
+
+
+	<div class="mouth2"></div>
+	<div class="mouth3"></div>
+	<div class="mouth4"></div>
+	<div class="mouth5"></div>	
+	<div class="mouth1"></div>
+	
+	
+	<div class="animation3">
+	
+	<div class="hair-right1"></div>
+	<div class="hair-right2"></div>
+	<div class="hair-right3"></div>
+	<div class="hair-right4"></div>
+	
+	
+
+	<div class="hair-left1"></div>
+	<div class="hair-left2"></div>
+	<div class="hair-left3"></div>
+	<div class="hair-left4"></div>
+		
+	</div>
+
+	</div>
+		
+
+	
+</body>
+</html>
