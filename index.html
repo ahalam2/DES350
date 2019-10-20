@@ -3,32 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <title>Angelika Halama/ DES 350</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">	
+
  <style>
 	
+	 
+	 body {
+		 background-color: white;
+	 }
+
+	 .background1{
+			width: 65%;
+		 	height: 1000px;
+			background-color: black;
+			position: absolute;
+			margin: -2% 0 0 40%;
+		 	padding: 0px;
+			z-index: -1; 
+	 }
+	 
+	  .background2 {
+		width: 70%;
+		height: 105%;
+		background-color: skyblue;
+		z-index: -1;
+		margin: 4% 0px 0px 0px;
+	
+	 }
+	 
+	 .column1 {
+		 display: flex;
+		 position: relative;
+
+
+	 }
+	 
+	 .column2 {
+		 margin: 0px 0px 0px 4%;
+		 position: relative;
+		 width: 39%;
+		 padding: 1%;
+
+
+	 }
+	 
+	 
+	 
 	 h1 {
-		 font-size: 75px;
+		 font-size: 40px;
 		 margin-bottom: 2%;
-		 margin: 2% 0px 0px 2%;
+		 font-family: Helvetica;
+		 color: white;
+		 
+		 
 	 }
 	 
 	 h2 {
+		 color: white;
 		 font-size: 25px;
 		 line-height: 30px;
 		 text-decoration: none;
+		 font-family: Helvetica;
+	 }
+	 
+	 	 
+	 h3 {
+		 background-color: white;
+		 width: 50%;
+		 text-align: center;
+		 color: skyblue;
+		 font-size: 30px;
+		 margin-left: 3%;
+		 margin-top: 3%;
+		 padding: 1%;
+		 border-radius: 6px;
+		 font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	 }
 	
-		.button {
-		  border-radius: 4px;
-		  background-color: #ffffff;
-		  border: none;
-		  color: #000000;
-		  text-align: left;
-		  font-size: 28px;
-		  padding: 20px;
-		  width: 900px;
+	 
+	 
+	 
+	 .intro {
+		 margin: 0px 30px 0px 0px;
+		 text-align: right;
+	 }
+	 
+	
+	 
+	
+	 
+	 
+	.button {
+		  background-color: white;
+		  color: skyblue;
+		  text-align: center;
+		  font-size: 20px;
+		  padding: 10px;
+		  width: 100%;
 		  transition: all 0.5s;
 		  cursor: pointer;
-		  margin: 5px;
+		  border: 1px;
+		  boarder-radius: 0px;
+		  margin: 20px 0px 0px 0%;
 		}
 
 		.button span {
@@ -56,25 +132,76 @@
 		  right: 0;
 		}
 	
+		.aboutme {
+			padding: 4px;
+			display: flex;
+	 }
+	 
+	 .column3 {
+		 background-color: white;
+		 border-radius: 5px;
+		 color: skyblue;
+		 text-align: center;
+		 padding: 5%;	
+	 }
+	 
+	 
 	</style>
 </head>
 
 <body>
-	<h1><strong>Angelika Halama/DES 350</strong><br></h1>
+	<div class="background1"></div>
+	  <div class="intro">
+		<h1><strong>Angelika Halama</strong><br></h1>
+		  
+		  <h2>Des 350 Portfolio</h2></div>
 	
-	<h2>
-	<button class="button"><span><a href="moodboard.html" target="_self">Dieter Rams Mood Boards</a></span></button><br>
-	<button class="button"><span><a href="dieter-essay.html" target="_self">Dieter Rams Essay</a></span></button><br>
-	<button class="button"><span><a href="dieter-rams-poster.html" target="_self">Dieter Rams Poster</a></span></button><br>
-	<button class="button"><span><a href="dieter-essay-final.html" target="_self">Dieter Rams Coded Webpage</a></span></button><br>
-	<button class="button"><span><a href="calculator.html" target="_self">First Coded Calculator</a></span></button><br>
-	<button class="button"><span><a href="dietercalc.html" target="_self">Dieter Rams Calculator Design</a></span></button><br>
-	<button class="button"><span><a href="dieter-calc-final.html" target="_self">Dieter Rams Coded Calculator</a></span></button><br>
-	<button class="button"><span><a href="symba.html" target="_self">Symba Portrait</a></span></button><br>
+
+<div class="background2">
+	
+	
+	
+
+	<div class="column1">
+	<h3>Portfolio Examples</h3>
+	<div class="column2">
+	<button class="button"><span><a href="portfolio-examples.html" target="_self">Portfolios</a></span></button></div></div>
+	
+	
+	<div class="column1">
+	<h3>Animated Portraits</h3>
+	<div class="column2">
 	<button class="button"><span><a href="symba-simple.html" target="_self">Symba Animation</a></span></button><br>
-	<button class="button"><span><a href="portfolio-examples.html" target="_self">Portfolio Examples</a></span></button>
-	</h2>
+	<button class="button"><span><a href="symba.html" target="_self">Symba Portrait</a></span></button><br></div></div>
 	
+	
+	<div class="column1">
+	<h3>Essays</h3>
+	<div class="column2">
+	<button class="button"><span><a href="dieter-essay-final.html" target="_self">Dieter Rams Coded Webpage</a></span></button><br>
+	<button class="button"><span><a href="dieter-rams-poster.html" target="_self">Dieter Rams Poster</a></span></button><br>
+	<button class="button"><span><a href="dieter-essay.html" target="_self">Simple Essay</a></span></button><br></div></div>
+
+	
+
+	<div class="column1">
+	<h3>Calculator</h3>
+	<div class="column2">
+	<button class="button"><span><a href="dieter-calc-final.html" target="_self">Dieter Rams Coded Calculator</a></span></button><br>
+	<button class="button"><span><a href="dietercalc.html" target="_self">Dieter Rams Calculator Design</a></span></button><br>
+	<button class="button"><span><a href="calculator.html" target="_self">First Coded Calculator</a></span></button><br></div></div>
+	  </div>
+	
+<div class="background2">
+	
+
+	<div class="aboutme"><h3>About Me<br></h3>
+		<div class="column2"><div class="column3">I am a Graphic Design and Industrial Design double major, with a minor in Computer Science. I am passionate about music and art, and I strive to incorporate both into my work. I enjoy learning new things and I hope to further my carrer in the field of UI/UX design. </div> </div>
+	
+	</div></div>
+
+
+
 	
 
 
