@@ -9,10 +9,18 @@
 	
 	
 	body {
-	  background-image: linear-gradient(#e0b360, #d47850);
+	  background-image: radial-gradient(#e0b360, #d47850);
 	
 	}
 	
+/*
+	#gradient {
+		background-image: linear-gradient(to bottom, #e0b360, #d47850);
+
+		
+	}
+	
+*/
 	
 	.picture1 {
 		position: absolute;
@@ -35,15 +43,26 @@
 	
 	
 	h1 {
-		font-family: 'Lobster', cursive;
-		font-size: 200px;
-		position: absolute;
-		z-index: -1;
-		left: 20%;
-		top: -10%;
 		text-align: center;
 	}
 	
+	.visit {
+		font-family: Helvetica;
+		font-size: 60px;
+		position: absolute;
+		z-index: -1;
+		left: 10%;
+		top: -10%;
+	}
+	
+	.yellowstone{
+		font-family: 'Lobster', cursive;
+		font-size: 100px;
+		position: absolute;
+		z-index: -1;
+		left: 20%;
+		top: 10%;
+	}
 </style>
 	
 </head>
@@ -51,7 +70,10 @@
 	
 <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 	
-	<h1>Yellowstone</h1>
+	<div id="gradient"></div>
+	
+	<div class="visit"><h1>Visit</h1></div>
+	<div class="yellowstone"><h1>Yellowstone</h1></div>
 
 	<div class="picture1"><img src="monutain.png" width="100%" alt=""/></div>
 
