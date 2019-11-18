@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Angelika Halama/ DES 350/ Header</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">	
+	
+<style>
+	
+	
+	body {
+	  background-image: linear-gradient(#e0b360, #d47850);
+	
+	}
+	
+	
+	.picture1 {
+		position: absolute;
+		margin-top: -30%;
+		left: 0%;
+		width: 101%;
+		z-index: -2;
+	}
+	
+	.picture2 {
+		position: absolute;
+		display: inline-block;
+		margin-top: -30%;
+		left: 74%;
+		top: 100%;
+		width: 25%;
+		z-index: -3;
+		float: right;
+	}
+	
+	
+	h1 {
+		font-family: 'Lobster', cursive;
+		font-size: 200px;
+		position: absolute;
+		z-index: -1;
+		left: 20%;
+		top: -10%;
+		text-align: center;
+	}
+	
+</style>
+	
+</head>
+<body>
+	
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	
+	<h1>Yellowstone</h1>
+
+	<div class="picture1"><img src="monutain.png" width="100%" alt=""/></div>
+
+	<div class="picture2 rellax" data-rellax-speed="5"><img src="sun.png" width="100%" alt=""/></div>
+	
+
+	<!-- javascript by Dixon and Moe: https://github.com/dixonandmoe/rellax -->
+	 <script type="text/javascript" src="rellax.js"></script>
+    <script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+	
+
+</body>
+</html>
