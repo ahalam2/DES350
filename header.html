@@ -150,17 +150,19 @@
 	.visit2 {
 		font-family: 'Lobster', cursive;
 		color: white;
-		width: 50%;
-		border: white;
+		width: 40%;
+		transform: translate(-50%, -50%);
 		text-align: center;
 		font-size: 5vw;
-		left: 25%;
-		top: 240%;;
+		left: 50%;
+		background-size: contain;
+		margin-top: 80%;
 		position: absolute;
 		z-index: -1;
+		border: 3px solid white !important;
 	
 	}
-	
+
 	
 	.hill1 {
 		position: absolute;
@@ -183,7 +185,7 @@
 		position: absolute;
 		width: 100%;
 		left: 0%;
-		margin-top: 130%;
+		margin-top: 140%;
 		z-index: -2;
 
 	}
@@ -192,16 +194,18 @@
 		position: absolute;
 		width: 100%;
 		left: 0%;
-		margin-top: 190%;
+		margin-top: 210%;
 		z-index: -2;
 
 	}
 	
 	.about {
-		margin: 110% 0px 0px 40%;
-		line-height: 1.4em;
 		position: absolute;
 		z-index: -1;
+		margin-top: 105%;
+		margin-left: 32%;
+		width: 50%;
+
 	}
 	
 	.parkinfo {
@@ -209,7 +213,8 @@
 		font-size: 1.2vw;
 		width: 50%;
 		color: white;
-		margin: 120% 0px 0px 40%;
+		margin-left: 32%;
+		margin-top: 118%;
 		line-height: 1.4em;
 		position: absolute;
 		z-index: -1;
@@ -222,10 +227,81 @@
 	}
 	
 	.things {
-		margin: 155% 0px 0px 15%;
 		position: absolute;
-		z-index: -2;
+		text-align: left;
+		margin-top: 155%;
+		margin-left: 5%;
+		z-index: -1;
+		width: 50%;
 	}
+	
+	
+	.activities {
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 1.2vw;
+		column-count: 5;
+		width: 100%;
+		margin-left: 0%;
+		margin-top: 185%;
+		position: absolute;
+		z-index: -1;
+		color: white;
+		text-align: center;
+	}
+	
+	
+	.activity-img{
+		column-count: 5;
+		position: absolute;
+		z-index: -1;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 1.3vw;
+		width: 100%;
+		margin-top: 170%;
+		color: white;
+		text-align: center;
+	}
+	
+	
+	.places {
+		position: absolute;
+		text-align: left;
+		margin-top: 205%;
+		margin-left: 5%;
+		z-index: -1;
+		width: 50%;
+	}
+	
+	
+	.leftcolumn {
+		display:inline-block;
+		float: left;
+		width: 23%;
+		margin-top: 220%;	
+		overflow: hidden;
+		margin-left: 10%;	
+		padding-right: 3%;	
+	}
+	
+	.midcolumn {
+		display: inline-block;
+		float: left;
+		width: 23%;
+		margin-top: 220%;	
+		padding-right: 3%;	
+	}
+	
+	.rightcolumn {
+		display: inline-block;
+		float: left;
+		width: 23%;
+		margin-top: 220%;	
+		padding-right: 3%;	
+		}
+	
+	
+	
+	
 	
 </style>
 	
@@ -261,16 +337,79 @@
 	<div class="visit2">Visit Yellowstone!</div>
 	
 	
-	<div class="hill1"><img src="hill1.png" width="100%" alt=""/></div>
-	<div class="hill2"><img src="hill2.png" width="100%" alt=""/></div>
-	<div class="hill3"><img src="hill3.png" width="100%" alt=""/></div>
-	<div class="hill4"><img src="hill4.png" width="100%" alt=""/></div>
+	<div class="hill1 rellax" data-rellax-speed="1"><img src="hill1.png" width="100%" alt=""/></div>
+	<div class="hill2 rellax" data-rellax-speed="2"><img src="hill2.png" width="100%" alt=""/></div>
+	<div class="hill3 rellax" data-rellax-speed="1"><img src="hill3.png" width="100%" alt=""/></div>
+	<div class="hill4 rellax" data-rellax-speed="2"><img src="hill4.png" width="100%" alt=""/></div>
 	
 	<div class="about"><h2>About the Park!</h2></div>
 	<div class="parkinfo"><p>Yellowstone National Park became the first national park in the United states in 1872. The park is known for its extensive wildlife and prominent geothermal features, such as the famous “Old Faithful” geyser. Yellowstone National Park spans an area of 3,468.4 square miles, and is located across three states which include Wyoming, Montana, and Idaho. Yellowstone also holds many different lakes, canyons, rivers, and mountains. </p></div>
 	
 	
 	<div class="things"><h2>Things to Do!</h2></div>
+
+	
+	<div class="activity-img">	
+		<div class="boat"><img src="boat.png" width="100%" alt=""/>Boating</div>
+		<div class="hiking"><img src="hiking.png" width="100%" alt=""/>Hiking</div>												  
+		<div class="fishing"><img src="tent.png" width="100%" alt=""/>Sightseeing</div>
+		<div class="camping"><img src="tent.png" width="100%" alt=""/>Camping</div>
+		<div class="sightseeing"><img src="sightseeing.png" width="100%" alt=""/>Fishing</div></div>
+	
+<div class="places"><h2>Places to See!</h2></div>
+
+
+	<div class="leftcolumn"><script type="text/javascript">
+		var total_images = 3;
+		var random_number = Math.floor((Math.random()*total_images));
+		var random_img = new Array();
+		random_img[0] = '<a href="page1.html"><img src="https://gira006.github.io/DES350/poster_animation.gif" width="100%"></a>';
+		random_img[1] = '<a href="page2.html"><img src="https://ahalam2.github.io/DES350/Yellowstone.gif" width="100%"></a>';
+		random_img[2] = '<a href="page3.html"><img src="https://donteking.github.io/DES350/AnimatedPoster.gif" width="100%"></a>';
+		random_img[3] = '<a href="page3.html"><img src="https://samorie.github.io/DES350/poster_final1.gif" width="100%"></a>';
+		random_img[4] = '<a href="page3.html"><img src="https://dmejia11.github.io/DES350/Mejia_rocky.gif" width="100%"></a>';
+		document.write(random_img[random_number]);
+		</script>	
+</div>
+	
+	<div class="midcolumn"><script type="text/javascript">
+		var total_images = 3;
+		var random_number = Math.floor((Math.random()*total_images));
+		var random_img = new Array();
+		random_img[0] = '<a href="page3.html"><img src="https://agarc88.github.io/DES350/Mesa-Verde-Poster-1_1.gif" width="100%"></a>'
+		random_img[1] = '<a href="page3.html"><img src="https://cgasid2.github.io/DES350/final-poster-animation-.gif" width="100%"></a>'
+		random_img[2] = '<a href="page1.html"><img src="https://snguye44.github.io/DES350/natureposterfinal.gif" width="100%"></a>';
+		random_img[3] = '<a href="page2.html"><img src="https://jmiran28.github.io/DES350/olympic-poster.gif" width="100%"></a>';
+		random_img[4] = '<a href="page3.html"><img src="https://avelaz36.github.io/DES350/np_poster.gif" width="100%"></a>';
+		random_img[5] = '<a href="page3.html"><img src="https://vweiss4.github.io/DES350/poster-2.gif" width="100%"></a>';
+	
+		document.write(random_img[random_number]);
+		</script>
+</div>	
+	
+	
+	<div class="rightcolumn"><script type="text/javascript">
+		var total_images = 3;
+		var random_number = Math.floor((Math.random()*total_images));
+		var random_img = new Array();
+		random_img[0] = '<a href="page1.html"><img src="https://zali30.github.io/DES350/web/photo/posterM.gif" width="100%"></a>';
+		random_img[1] = '<a href="page2.html"><img src="https://k11borrero.github.io/DES350/finalparksposter.gif" width="100%"></a>';
+		random_img[2] = '<a href="page3.html"><img src="https://anhvyb.github.io/DES350/posterRRRb%203_1.gif" width="100%"></a>';
+		random_img[3] = '<a href="page3.html"><img src="https://kdirnb2.github.io/DES350/newposter.gif" width="100%"></a>';
+		random_img[4] = '<a href="page3.html"><img src="https://tmfriese.github.io/DES350/Comp-1_4.gif" width="100%"></a>'
+		random_img[5] = '<a href="page3.html"><img src="https://lpark25.github.io/DES350/Comp-1_1.gif" width="100%"></a>'
+		document.write(random_img[random_number]);
+		</script>	
+</div>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	<!-- javascript by Dixon and Moe: https://github.com/dixonandmoe/rellax -->
 	 <script type="text/javascript" src="rellax.js"></script>
