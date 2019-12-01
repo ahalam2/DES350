@@ -1,0 +1,902 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Angelika Halama/ DES 350/ Header</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">	
+	
+<style>
+	
+	body {
+		width: 100%;
+	}
+	
+	.mountain {
+		position: absolute;
+		margin-top: -18%;
+		left: 0%;
+		width: 100%;
+		z-index: -2;
+	}
+	
+	
+	.gradient {
+		background: linear-gradient( #e0b360, #d47850);
+		width: 100%;
+		height: 1000px;
+		position: absolute;
+		z-index: -5;
+		left: 0;
+		top: 0;
+	}
+	
+	
+	
+	.sun {
+		
+		position: absolute;
+		display: inline-block;
+		margin-top: 45%;
+		left: 74%;
+		width: 25%;
+		z-index: -4;
+		float: right;
+	}
+	
+	
+	
+	
+	
+	
+	
+	.cloud1 {
+		position: absolute;
+		width: 50%;
+		left: 11%;
+		margin-top: 1%;
+		z-index: -1;
+	}
+	
+	.cloud2 {
+		position: absolute;
+		width: 50%;
+		left: -2%;
+		margin-top: 9%;
+		z-index: -3;
+	}
+	
+	.cloud3 {
+		position: absolute;
+		width: 40%;
+		left: 4%;
+		margin-top: 17%;
+		z-index: -3;
+	}
+	
+	.cloud5 {
+		position: absolute;
+		width: 40%;
+		left: 57%;
+		margin-top: 4%;
+		z-index: -3;
+	}
+	
+	.cloud6 {
+		position: absolute;
+		width: 40%;
+		left: 50%;
+		margin-top: -1%;
+		z-index: -3;
+	}
+	
+	.cloud7 {
+		position: absolute;
+		width: 25%;
+		left: 70%;
+		margin-top: 27%;
+		z-index: -3;
+	}
+	
+	.cloud8 {
+		position: absolute;
+		width: 40%;
+		left: 34%;
+		margin-top: 13%;
+		z-index: -3;
+	}
+	
+	.cloud9 {
+		position: absolute;
+		width: 40%;
+		left: -12%;
+		margin-top: 5%;
+		z-index: -3;
+	}
+	
+	.cloud10 {
+		position: absolute;
+		width: 40%;
+		height: auto;
+		left: -17%;
+		margin-top: 20%;
+		z-index: -3;
+	}
+	
+	.cloud11 {
+		position: absolute;
+		width: 40%;
+		height: auto;
+		left: 7%;
+		margin-top: 30%;
+		z-index: -3;
+	}
+	
+	.cloud12 {
+		position: absolute;
+		width: 40%;
+		height: auto;
+		left: 30%;
+		margin-top: 26%;
+		z-index: -3;
+	}
+	
+	.cloud13 {
+		position: absolute;
+		width: 40%;
+		height: auto;
+		left: -14%;
+		margin-top: 32%;
+		z-index: -3;
+	}
+	
+	.cloud14 {
+		position: absolute;
+		width: 40%;
+		height: auto;
+		left: -5%;
+		margin-top: 24%;
+		z-index: -3;
+	}
+	
+	.cloud15 {
+		position: absolute;
+		width: 35%;
+		height: auto;
+		left: 65%;
+		margin-top: 32%;
+		z-index: -3;
+	}
+	
+	
+	
+	
+	
+	
+	.visit {
+		font-family: Helvetica;
+		font-size: 3vw;
+		position: absolute;
+		z-index: -1;
+		margin-left: 8%;
+		marin-top: 2%;
+		color: white;
+	}
+	
+	
+	
+	.yellowstone{
+		font-family: 'Lobster', cursive;
+		font-size: 7vw;
+		position: absolute;
+		z-index: -1;
+		left: 25%;
+		top: 0%;
+		color: white
+	}
+	
+
+
+	
+	.hill1 {
+		position: absolute;
+		width: 100%;
+		left: 0px;
+		margin-top: 45%;
+		z-index: -2;
+		heightL 100%;
+	}
+	
+	.hill2 {
+		position: absolute;
+		width: 100%;
+		left: 0%;
+		margin-top: 100%;
+		z-index: -2;
+		height: 100%;
+	}
+	
+	.hill2v2 {
+		display: none;
+	}
+	
+	
+	.hill3 {
+		position: absolute;
+		width: 100%;
+		left: 0%;
+		margin-top: 145%;
+		z-index: -2;
+		height: 100%;
+	
+	}
+	
+	.hill3v2 {
+		display: none;
+	}
+	
+	
+	.hill4 {
+		position: absolute;
+		width: 100%;
+		left: 0%;
+		margin-top: 210%;
+		z-index: -2;
+		height: 100%;
+	}
+	
+	.hill4v2 {
+		display: none;
+	}
+	
+	
+	
+	
+	.about {
+		position: absolute;
+		z-index: -1;
+		margin-top: 108%;
+		margin-left: 5%;
+		width: 50%;
+		text-align: left;
+
+	}
+	
+	
+	.facts {
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 1.2vw;
+		width: 20%;
+		color: white;
+		margin-left: 70%;
+		margin-top: 124%;
+		line-height: 2em;
+		position: absolute;
+		z-index: -1;
+		text-align: left;
+		float: left;
+		list-style-type: circle;
+	}
+	
+
+	.parkinfo {
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 1.2vw;
+		width: 50%;
+		color: white;
+		margin-left: 5%;
+		margin-top: 123%;
+		line-height: 1.4em;
+		position: absolute;
+		z-index: -1;
+		text-align: left;
+		float: right;
+	}
+	
+	
+	
+	
+	
+	
+	h2 {
+		font-family: "Lobster", cursive;
+		font-size: 5vw;
+		color: white;
+	}
+	
+	
+	
+	
+	
+	.things {
+		position: absolute;
+		text-align: left;
+		margin-top: 160%;
+		margin-left: 5%;
+		z-index: -1;
+	
+	}
+			
+	.activity-img{
+		column-count: 5;
+		position: absolute;
+		z-index: -1;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 1.4vw;
+		width: 90%;
+		margin-top: 185%;
+		color: white;
+		text-align: center;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	.pictures {
+		column-count: 5;
+		position: absolute;
+		z-index: -1;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 1.2vw;
+		width: 90%;
+		margin-top: 200%;
+		color: white;
+		left: 50%;
+		text-align: center;
+		column-gap: 1em;
+		transform: translate(-50%, -50%);
+	}
+	
+
+	
+	
+	
+	
+	.places {
+		position: absolute;
+		text-align: left;
+		margin-top: 225%;
+		margin-left: 5%;
+		z-index: -1;
+		width: 50%;
+		font-weight: 2em;
+	}
+		
+	.geyser {
+		position: absolute;
+		margin-top: 208.4%;
+		z-index: -2;
+		left: 40%;
+		width: 60%;
+	}
+
+	
+	
+	
+
+	a.button1{
+		 width: 40%;
+		 font-size: 4vw;
+		 font-family: 'Lobster', cursive;
+		 display:inline-block;
+		 padding:0.30em 1.2em;
+		 border:0.1em solid #FFFFFF;
+	/*	 margin:0 0.3em 0.3em 0;*/
+	/*	 border-radius:0.12em;*/
+		 box-sizing: border-box;
+		 left: 50%;
+		 position: absolute;
+		 z-index: -1;
+		 margin-top: 82%;
+		 text-decoration:none;
+		 transform: translate(-50%, -50%);
+		 font-weight:0;
+		 color:#FFFFFF;
+		 text-align:center;
+		 transition: all 0.2s;
+		}
+	
+	a.button1:hover{
+		 color:#000000;
+		 background-color:#FFFFFF;
+		}
+
+	@media all and (max-width:10em){
+		 a.button1{
+		  display:block;
+		  margin:0.4em auto;
+		 }
+		}
+
+
+	.info {
+		position: absolute;
+		z-index: -1;
+		font-family: Helvetica;
+		font-size: 1.4vw;
+		width: 50%;
+		margin-top: 335%;
+		color: white;
+		text-align: left;
+		left: 11%;
+	}
+	
+
+	
+	
+	#parkposter1 {
+		position: absolute;
+		z-index: -2;
+		margin-top: 240%;
+		left: 10.5%;
+		width: 18%;
+
+}
+
+
+	#parkposter2 {
+		position: absolute;
+		z-index: -1;
+		margin-top: 270%;
+		left: 10.5%;
+		width: 18%;
+
+}
+
+	#parkposter3 {
+		position: absolute;
+		z-index: -1;
+		margin-top: 300%;
+		left: 10.5%;
+		width: 18%;
+}
+	
+	.gif {
+		width: 50%;
+	}
+	
+	
+	
+	
+	
+	
+	
+@media only screen and (max-width: 480px){
+	
+	
+	.visit {
+		font-size: 5vw;
+		margin-left: 50%;
+		top: 5%;
+		text-align: center;
+		transform: translate(-50%, -50%);
+	}
+	
+	.yellowstone{
+		font-size: 9vw;
+		position: absolute;
+		text-align: center;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+		left: 50%;
+		top: 11%;
+	}
+	
+	a.button1 {
+		position: absolute;
+		font-size: 2em;
+		width: 80%;
+		top: 5%;
+		text-align: center;
+	}
+	
+	.about {
+		text-align: center;
+		transform: translate(-50%, -50%);
+		left: 45%;
+		top: 20%;
+		font-size: 5em;
+		width: 85%;
+	}
+	
+	
+	.parkinfo{
+		top: 17%;
+		text-align: center;
+		font-size: 1em;
+		width: 85%;
+	}
+	
+	.facts {
+		top: 50%;
+		width: 85%;
+		font-size: 1em;
+		text-align: center;
+		right: -35%;
+		transform: translate(-50%, -50%);
+	}
+	
+	.hill1 {
+		top: 5%;
+	}
+	
+	.hill2v2 {
+		position: absolute;
+		width: 100%;
+		left: 0%;
+		top: 70%;
+		z-index: -2;
+		display: inline-block;
+	}
+	
+	.hill3v2{
+		position: absolute;
+		width: 100%;
+		left: 0%;
+		top: 135%;
+		z-index: -2;
+		display: inline-block;
+	}
+	
+	.hill4v2 {
+		position: absolute;
+		width: 100%;
+		left: 0%;
+		top: 270%;
+		z-index: -2;
+		display: inline-block;
+	}
+	
+	.hill4 {
+		display: none;
+	}
+	.hill2 {
+		display: none;
+	}
+	
+	.hill3 {
+		display: none;
+	}
+	
+	
+	
+	.word1 {
+		position: absolute;
+		top: 0%;
+		left: 100%;
+		z-index: -1;
+		font-size: 3em;
+	}
+	
+	.word2 {
+		position: absolute;
+		top: 20%;
+		left: 100%;
+		z-index: -1;
+		font-size: 3em;
+	}
+	
+	.word3 {
+		position: absolute;
+		top: 40%;
+		left: 100%;
+		z-index: -1;
+		font-size: 3em;
+	}
+	
+	.word4 {
+		position: absolute;
+		top: 60%;
+		left: 100%;
+		z-index: -1;
+		font-size: 3em;
+	}
+	
+	.word5 {
+		position: absolute;
+		top: 80%;
+		left: 100%;
+		z-index: -1;
+		font-size: 3em;
+	}
+	
+	.word5 {
+		position: absolute;
+		top: 80%;
+		left: 100%;
+		z-index: -1;
+		font-size: 3em;
+	}
+	
+	.word6 {
+		position: absolute;
+		margin-top: -56%;
+		left: 0%;
+		z-index: -1;
+		font-size: 1em;
+	}
+	
+	.word7 {
+		position: absolute;
+		margin-top: 7%;
+		left: 0%;
+		z-index: -1;
+		font-size: 1em;
+	}
+	
+	.word8 {
+		position: absolute;
+		margin-top: 70%;
+		left: 0%;
+		z-index: -1;
+		font-size: 1em;
+	}
+	
+	.word9 {
+		position: absolute;
+		margin-top: 133%;
+		left: 0%;
+		z-index: -1;
+		font-size: 1em;
+	}
+	
+	.word10 {
+		position: absolute;
+		margin-top: 196%;
+		left: 0%;
+		z-index: -1;
+		font-size: 1em;
+	}
+	
+	
+	
+	.things {
+		top: 60%;
+		text-align: center;
+		transform: translate(-50%, -50%);
+		left: 45%;
+		font-size: 5em;
+		width: 85%;
+	}
+	
+	.activity-img {
+		top: 105%;
+		column-count: 1;
+		width: 35%;
+		float: left;
+		left: 20%;
+	}
+	
+	.pictures {
+		top: 70%;
+		column-count: 1;
+		width: 55%;
+		font-size: 1.1em;
+		text-align: left;
+		left: 65%;
+	}
+	
+	.places {
+		top: 150%;
+		text-align: center;
+		transform: translate(-50%, -50%);
+		left: 45%;
+		font-size: large;
+		width: 100%;
+	}
+
+	.info {
+		top: 325%;
+		text-align: center;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		width: 100%;
+		font-size: 1.3em;
+	}
+	
+	.geyser {
+		display: none;
+	}
+	
+	h2 {
+		font-size: 50px;
+	}
+	
+
+	#parkposter1 {
+		position: absolute;
+		z-index: -1;
+		margin-top: 545%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 75%;
+
+}
+	#parkposter2 {
+		position: absolute;
+		z-index: -1;
+		margin-top: 670%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 75%;
+}
+	#parkposter3 {
+		position: absolute;
+		z-index: -1;
+		margin-top: 795%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 75%;
+}
+	
+	
+	
+</style>
+	
+</head>
+	
+<body>
+	
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	
+	
+	
+	
+	<div class="gradient"></div>
+	
+	
+	
+	
+	<div class="cloud1 rellax" data-rellax-speed="2"><img src="cloud1.png" width="100%" alt=""/></div>
+	<div class="cloud2 rellax" data-rellax-speed="3"><img src="cloud2.png" width="100%" alt=""/></div>
+	<div class="cloud3 rellax" data-rellax-speed="4"><img src="cloud3.png" width="100%" alt=""/></div>
+	<div class="cloud5 rellax" data-rellax-speed="2"><img src="cloud5.png" width="100%" alt=""/></div>
+	<div class="cloud6 rellax" data-rellax-speed="3"><img src="cloud6.png" width="100%" alt=""/></div>
+	<div class="cloud7 rellax" data-rellax-speed="4"><img src="cloud10.png" width="100%" alt=""/></div>
+	<div class="cloud8 rellax" data-rellax-speed="2"><img src="cloud8.png" width="160%" alt=""/></div>
+	<div class="cloud9 rellax" data-rellax-speed="3"><img src="cloud7.png" width="100%" alt=""/></div>
+	<div class="cloud10 rellax" data-rellax-speed="4"><img src="cloud7.png" width="100%" alt=""/></div>
+	<div class="cloud11 rellax" data-rellax-speed="4"><img src="cloud7.png" width="100%" alt=""/></div>
+	<div class="cloud12 rellax" data-rellax-speed="2"><img src="cloud8.png" width="100%" alt=""/></div>
+	<div class="cloud13 rellax" data-rellax-speed="3"><img src="cloud7.png" width="100%" alt=""/></div>
+	<div class="cloud14 rellax" data-rellax-speed="4"><img src="cloud5.png" width="100%" alt=""/></div>
+	<div class="cloud15 rellax" data-rellax-speed="4"><img src="cloud3.png" width="100%" alt=""/></div>
+
+	
+	
+	
+	
+<div class="visit"><h1>Visit</h1></div>
+<div class="yellowstone"><h1>Yellowstone</h1></div>
+
+	
+	
+	
+	<div class="mountain"><img src="monutain.png" width="100%" alt=""/></div>
+	
+	
+	
+
+<div class="sun rellax" data-rellax-speed="7"><img src="sun.png" width="100%" alt=""/></div>
+	
+
+	
+	
+<a href="https://www.nps.gov/yell/index.htm" class="button1">Visit Yellowstone!</a>
+	
+	
+	
+	
+	
+	<div class="hill1 rellax" data-rellax-speed="1"><img src="hill1.png" width="100%" alt=""/></div>
+	<div class="hill2 rellax" data-rellax-speed="2"><img src="hill2.png" width="100%" alt=""/></div>
+	
+	<div class="hill2v2"><img src="hill2v2.png" width="100%" alt=""/></div>
+	
+	
+	<div class="hill3 rellax" data-rellax-speed="1"><img src="hill3.png" width="100%" alt=""/></div>
+	
+	<div class="hill3v2"><img src="hill3v2.png" width="100%" alt=""/></div>
+	
+	<div class="hill4"><img src="hill4.png" width="100%" alt=""/></div>
+	
+	<div class="hill4v2"><img src="hill4v2.png" width="100%" alt=""/></div>
+
+	
+	
+	
+	
+	
+<div class="about"><h2>About the Park!</h2></div>
+	
+		<div class="facts">
+			<li>Est. 1872</li>
+			<li>3,468.4 square miles</li>
+			<li>44.4280° N, 110.5885° W</li></div>
+	
+		<div class="parkinfo">
+		<p>Yellowstone National Park became the first national park in the United states in 1872. The park is known for its extensive wildlife and prominent geothermal features, such as the famous “Old Faithful” geyser. Yellowstone National Park spans an area of 3,468.4 square miles, and is located across three states which include Wyoming, Montana, and Idaho. Yellowstone also holds many different lakes, canyons, rivers, and mountains. </p></div>
+	
+	
+	
+	
+	
+<div class="things"><h2>Things to Do!</h2></div>
+	<div class="activity-img">	
+		<img src="boat1.png" width="100%" alt=""/><div class="word1"><h3>Boating</h3></div>
+		
+		<img src="hiking1.png" width="100%" alt=""/><div class="word2"><h3>Hiking</h3></div>
+		
+		<img src="sight1.png" width="100%" alt=""/><div class="word3"><h3>Sightseeing</h3></div>
+		
+		<img src="tent1.png" width="100%" alt=""/><div class="word4"><h3>Camping</h3></div>
+		
+		<img src="fish1.png" width="100%" alt=""/><div class="word5"><h3>Fishing</h3></div>
+	
+	</div>
+	
+	
+	<div class="pictures">
+		<div class="word6">Observe the beautiful view from the water.</div>
+		<div class="word7">Find your hiking boots and explore nearly 1000 miles of trails.</div>
+		<div class="word8">Use some binoculars to watch the wildlife from afar.</div>
+		<div class="word9">Spend the night in one of twelve campgrounds.</div>
+		<div class="word10">Grab your fishing rod and fish responsibly.</div>
+	</div>
+	
+	
+	
+<div class="places"><h2>Places to See!</h2></div>
+
+	
+	<div class="geyser">
+		<img src="geyser.png" width="100%" alt=""/></div>
+	
+	<div class="info">Information from Wikipedia</div>
+	
+	
+
+	  <div class="gif" id="parkposter1"><script type="text/javascript">
+			var total_images = 1;
+			var random_number = Math.floor((Math.random()*total_images));
+			var random_img = new Array();
+			random_img[0] = '<a href="page1.html"><img src="https://vweiss4.github.io/DES350/poster-2.gif" width="100%"></a>';
+		  	document.write(random_img[random_number]);
+		  </script></div>
+
+
+	  <div class="gif" id="parkposter2"><script type="text/javascript">
+			var total_images = 1;
+			var random_number = Math.floor((Math.random()*total_images));
+			var random_img = new Array();
+			random_img[0] = '<a href="page2.html"><img src="https://avelaz36.github.io/DES350/np_poster.gif" width="100%"></a>';
+		  	document.write(random_img[random_number]);
+		  </script></div>
+
+		  
+	  <div class="gif" id="parkposter3"><script type="text/javascript">
+			var total_images = 1;
+			var random_number = Math.floor((Math.random()*total_images));
+			var random_img = new Array();
+			random_img[0] = '<a href="page3.html"><img src="https://lpark25.github.io/DES350/Comp-1_1.gif" width="100%"></a>';
+		  	document.write(random_img[random_number]);
+		  </script></div>
+
+
+
+	
+	
+	
+	<!-- javascript by Dixon and Moe: https://github.com/dixonandmoe/rellax -->
+<script type="text/javascript" src="rellax.js"></script>
+    <script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+	
+
+</body>
+</html>
